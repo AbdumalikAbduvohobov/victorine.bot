@@ -18,9 +18,9 @@ dp.include_router(handlers_router)
 
 # Run the bot
 async def main() -> None:
-    bot = Bot(token=TOKEN)
+    # bot = Bot(token=TOKEN)
 
-    # bot = Bot(token=TOKEN, session = session)
+    bot = Bot(token=TOKEN, session = session)
     await dp.start_polling(bot)
 
 
